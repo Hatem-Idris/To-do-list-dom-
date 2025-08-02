@@ -75,10 +75,12 @@ let added = () => {
     let taskobj = { text: taskText }
     if (taskText === "") {
         alert("You can't enter empty value");
-    }
+        
+    }else{
     TDL.push(taskobj)
     inputtask.value = ""
     showtasklist()
+    }
 
 };
 
